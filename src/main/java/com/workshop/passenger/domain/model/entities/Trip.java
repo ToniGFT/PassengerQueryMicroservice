@@ -40,8 +40,4 @@ public class Trip {
     @Min(value = 0, message = "Fare must be positive")
     private double fare;
 
-    // Método de validación adicional para verificar que endTime sea después de startTime
-    public boolean isValidTripTime() {
-        return startTime != null && endTime != null && endTime.isAfter(startTime);
-    }
 }

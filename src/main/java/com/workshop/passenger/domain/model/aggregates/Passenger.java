@@ -40,7 +40,7 @@ public class Passenger {
     private LocalDateTime registeredAt;
 
     @NotEmpty(message = "Passenger must have at least one trip")
-    @Valid // Ensures that each trip in the list is validated
+    @Valid
     private List<Trip> trips;
 
 }
