@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c596f7f4-c3fa-4f83-a3a5-0a3b473dafc1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/domain/model/aggregates/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/domain/model/aggregates/Passenger.java" afterDir="false" />
-    </list>
+    <list default="true" id="c596f7f4-c3fa-4f83-a3a5-0a3b473dafc1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
