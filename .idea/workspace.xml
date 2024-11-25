@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c596f7f4-c3fa-4f83-a3a5-0a3b473dafc1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/application/controller/PassengerQueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/application/controller/PassengerQueryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/application/services/PassengerQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/application/services/PassengerQueryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/application/services/PassengerQueryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/application/services/PassengerQueryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/domain/repository/PassengerQueryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/domain/repository/PassengerQueryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/workshop/passenger/application/controller/RouteControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/workshop/passenger/application/services/RouteQueryServiceImplTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
