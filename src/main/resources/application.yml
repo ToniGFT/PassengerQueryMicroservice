@@ -1,7 +1,26 @@
+server:
+  port: 8085
+
 spring:
   application:
-    name: passenger-query-microservice
+    name: passenger-query
   data:
     mongodb:
       uri: mongodb+srv://nuriamongodb:NoD7XFXMhzBWEZsb@cluster0.dmnaa.mongodb.net/Workshop?retryWrites=true&w=majority
+  kafka:
+    bootstrap-servers: 127.0.0.1:9094
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: passenger-query-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      session.timeout.ms: 15000
+      heartbeat.interval.ms: 3000
 
+kafka:
+  topics:
+    passenger-events: passenger-events

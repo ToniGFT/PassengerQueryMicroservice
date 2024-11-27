@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c596f7f4-c3fa-4f83-a3a5-0a3b473dafc1" name="Changes" comment="" />
+    <list default="true" id="c596f7f4-c3fa-4f83-a3a5-0a3b473dafc1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/podman-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/application/services/kafka/PassengerEventProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/application/services/kafka/PassengerEventProcessorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/domain/events/PassengerCreatedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/domain/events/PassengerDeletedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/domain/events/PassengerUpdatedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/domain/model/mapper/PassengerEventMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/domain/model/mapper/congif/PassengerEventMapperConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/infraestructure/configuration/kafka/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/infraestructure/messaging/kafka/PassengerEventConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/infraestructure/messaging/kafka/strategies/EventProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/infraestructure/messaging/kafka/strategies/EventProcessorRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/infraestructure/messaging/kafka/strategies/PassengerCreatedEventProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/infraestructure/messaging/kafka/strategies/PassengerDeletedEventProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/infraestructure/messaging/kafka/strategies/PassengerUpdatedEventProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/infraestructure/repository/PassengerCommandRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/domain/model/aggregates/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workshop/passenger/domain/model/aggregates/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,26 +66,29 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2ohxYjK1JMo6qXThUSZozuHe2mR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.PassengerApplication.executor": "Run",
-    "JUnit.PassengerQueryControllerTest.executor": "Run",
-    "JUnit.PassengerQueryServiceImplTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/nabz/Cursos/PassengerQueryMicroservice",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.PassengerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PassengerQueryControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PassengerQueryServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nabz/Cursos/PassengerQueryMicroservice&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\INTELLIJ\passenger" />
@@ -78,7 +102,7 @@
       <recent name="com.workshop.passenger.application.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PassengerQueryControllerTest">
+  <component name="RunManager" selected="Application.PassengerApplication">
     <configuration name="PassengerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.workshop.passenger.PassengerApplication" />
       <module name="passenger" />
@@ -137,9 +161,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PassengerApplication" />
         <item itemvalue="JUnit.PassengerQueryControllerTest" />
         <item itemvalue="JUnit.PassengerQueryServiceImplTest" />
-        <item itemvalue="Application.PassengerApplication" />
       </list>
     </recent_temporary>
   </component>

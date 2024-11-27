@@ -1,18 +1,19 @@
 package com.workshop.passenger.domain.model.aggregates;
 
 import com.workshop.passenger.domain.model.entities.Trip;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.validation.Valid;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -22,6 +23,9 @@ import java.util.List;
 @NoArgsConstructor
 @Document(collection = "Passenger")
 public class Passenger {
+
+    @Id
+    private ObjectId id;
 
     @NotBlank(message = "Name is required")
     private String name;
